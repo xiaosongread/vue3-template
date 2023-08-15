@@ -15,7 +15,12 @@ const routes = [
     path: '/about',
     name: 'About', 
     component: () => import('../views/about.vue')
-  }
+  },
+  // {
+  //   path: '/emit',
+  //   name: 'Emit', 
+  //   component: () => import('../views/emit.vue')
+  // }
 ]
 
 const router = createRouter({
