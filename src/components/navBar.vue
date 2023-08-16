@@ -13,6 +13,7 @@
       <router-link to="/solt">Solt 插槽</router-link>
       <router-link to="/provide">provide</router-link>
       <router-link to="/bus">bus</router-link>
+      <router-link to="/test">动态路由添加</router-link>
     </div>
   </div>
 </template>

@@ -34,5 +34,10 @@
     "name": "小周",
     "age": 26,
     "sex": "男"
+  }],
+  "menu": [{
+    "path": "/test",
+    "name": "Test",
+    "component": "() => import('../views/index.vue')"
   }]
 }

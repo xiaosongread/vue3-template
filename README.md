@@ -9,3 +9,5 @@
 ## 组件通信
 ## 组件封装
 ## 开发、线上环境配置
+## json-server
+json-server --watch route.json --port 3010

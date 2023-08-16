@@ -1,4 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
+import store from '../store'
 
 const routes = [
   {
@@ -43,6 +44,24 @@ const router = createRouter({
   routes
 })
 
+router.beforeEach(async (to, from, next) => {
+  await store.dispatch('getMenuList')
+  if (router.hasRoute('Test')) {
+    next()
+  } else {
+    router.addRoute({
+      path: '/test',
+      name: 'Test',
+      component: () => import('../views/test.vue')
+    })
+    // console.log('11', store.getters.asyncMenuList.length)
+    // store.getters.asyncMenuList.forEach(item => {
+    //   router.addRoute(item)
+    // })
+    // console.log('22', router.getRoutes())
+    next(to)
+  }
+})
 export default router
 
 

@@ -1,0 +1,8 @@
+{
+  "post": [{
+      "path": "/test",
+      "name": "Text",
+      "component": "() => import('../views/test.vue')"
+    }
+  ]
+}
