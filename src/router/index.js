@@ -16,11 +16,26 @@ const routes = [
     name: 'About', 
     component: () => import('../views/about.vue')
   },
-  // {
-  //   path: '/emit',
-  //   name: 'Emit', 
-  //   component: () => import('../views/emit.vue')
-  // }
+  {
+    path: '/ref',
+    name: 'Ref', 
+    component: () => import('../views/ref.vue')
+  },
+  {
+    path: '/solt',
+    name: 'Solt', 
+    component: () => import('../views/solt.vue')
+  },
+  {
+    path: '/provide',
+    name: 'Provide', 
+    component: () => import('../views/provide.vue')
+  },
+  {
+    path: '/bus',
+    name: 'Bus', 
+    component: () => import('../views/bus.vue')
+  }
 ]
 
 const router = createRouter({

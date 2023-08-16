@@ -24,6 +24,16 @@ const editParent = function () {
   // 修改父组件的数据
   emit('setPostList', '已经是修改后的数据了！')
 }
+
+
+let message = ref('子组件的数据')
+const changeChildMessage = function (data) {
+  message.value = data
+}
+defineExpose({
+  message,
+  changeChildMessage
+})
 </script>
 
 <template>

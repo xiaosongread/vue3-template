@@ -9,6 +9,10 @@
       <router-link to="/">首页</router-link>
       <router-link to="/home">Home</router-link>
       <router-link to="/about">About</router-link>
+      <router-link to="/relf">Relf</router-link>
+      <router-link to="/solt">Solt 插槽</router-link>
+      <router-link to="/provide">provide</router-link>
+      <router-link to="/bus">bus</router-link>
     </div>
   </div>
 </template>
